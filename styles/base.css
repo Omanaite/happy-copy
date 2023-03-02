@@ -75,6 +75,10 @@ p {
     margin-top: 2rem;
 }
 
+.noTopMargin {
+    margin-top: 0;
+}
+
 button {
     background-color: var(--clr-primary-300);
     color: white;
