@@ -92,3 +92,23 @@ button {
 .fw700 {
     font-weight: 700;
 }
+
+.bfbCard {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+#benefitsForBuyers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--clr-accent-200);
+    padding: 4vw 8vw;
+}
+
+.sectionIcon {
+    width: 3rem;
+}
