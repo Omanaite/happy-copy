@@ -61,3 +61,30 @@ p {
     margin-top: 0.3rem;
 }
 
+/* DIRECT STYLING */
+
+#reduceShippingCosts {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 4vw 8vw;
+
+}
+
+.bigTopMargin {
+    margin-top: 2rem;
+}
+
+button {
+    background-color: var(--clr-primary-300);
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    border-style: none;
+    font-size: initial;
+}
+
+.fw700 {
+    font-weight: 700;
+}
