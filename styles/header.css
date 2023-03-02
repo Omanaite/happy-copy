@@ -1,8 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .header-top-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 80px;
     background-color: #142544;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .header-top__logo{
     width: 200px;
@@ -18,6 +29,8 @@
     border-radius: 20px 20px 20px 20px;
 }
 .header-top-wrapper>div:nth-child(3){
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 80.09px;
     height: 49.78px;
@@ -37,9 +50,15 @@
     color: white;
 }
 .login-anchor{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0;
     color: #ffffff;
     text-decoration: none;
@@ -54,26 +73,46 @@
     line-height: 22px;
 }
 .login-anchor>.wrapper-login{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 2.206rem;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .login-anchor>.wrapper-cart{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 1.8rem;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .header-mid-wrapper{
     margin-left: 2rem;
 }
 .header-mid-wrapper>div{
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .header-mid-wrapper>div,
 .header-mid-wrapper>div>ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 1.5rem
 }
@@ -91,8 +130,12 @@
     font-weight: 400;
     font-size: 12.8px;
     line-height: 19px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     margin-top: 0.288rem;
     margin-bottom: 0.35rem;
@@ -102,10 +145,15 @@
     height: 16px;
     font-weight: 900;
     font-size: 16px;
-    align-items: center;
-    filter: invert(49%) sepia(96%) saturate(525%) hue-rotate(170deg) brightness(97%) contrast(101%);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-filter: invert(49%) sepia(96%) saturate(525%) hue-rotate(170deg) brightness(97%) contrast(101%);
+            filter: invert(49%) sepia(96%) saturate(525%) hue-rotate(170deg) brightness(97%) contrast(101%);
 }
 .header-mid-wrapper>div>ul>li{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: .216rem;
     font-family: 'Work Sans';
@@ -120,7 +168,8 @@
     height: 12.8px;
     margin-right: 0.25rem;
     margin-left: 0.5rem;
-    filter: invert(96%) sepia(0%) saturate(0%) hue-rotate(198deg) brightness(108%) contrast(101%);
+    -webkit-filter: invert(96%) sepia(0%) saturate(0%) hue-rotate(198deg) brightness(108%) contrast(101%);
+            filter: invert(96%) sepia(0%) saturate(0%) hue-rotate(198deg) brightness(108%) contrast(101%);
 }
 .header-mid-wrapper>div>div{
     margin-right: 1rem;
@@ -129,29 +178,47 @@
     height: 34.66px;
     background: #2F9659;
     opacity: 0.9;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: #FFFFFF;
 }
 .login-cart{
     height: 23px;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(299deg) brightness(101%) contrast(104%);
+    -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(299deg) brightness(101%) contrast(104%);
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(299deg) brightness(101%) contrast(104%);
 }
 .header-footer{
     background: #142544;
     height: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .header-footer__wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 1.188rem;
     width: 780px;
 }
 .header-footer__wrapper>div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 0.369rem;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
     place-self: center;
 }
 .header-footer__wrapper>div>img{
@@ -161,10 +228,15 @@
     font-weight: 900;
     font-size: 15px;
     line-height: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
-    filter: invert(66%) sepia(29%) saturate(6723%) hue-rotate(120deg) brightness(87%) contrast(101%);
+    -webkit-filter: invert(66%) sepia(29%) saturate(6723%) hue-rotate(120deg) brightness(87%) contrast(101%);
+            filter: invert(66%) sepia(29%) saturate(6723%) hue-rotate(120deg) brightness(87%) contrast(101%);
 }
 .header-footer__wrapper>div:nth-child(2){
     color:white;
@@ -175,6 +247,8 @@
     line-height: 22px;
 }
 .header-footer>div:first-child{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .footer-slider-container{
@@ -186,10 +260,6 @@
     width: 780px;
     height: 391.23px;
 }
-/* .reference-container>div{
-    width: 780px;
-    height: 245px;
-} */
 .reference-container>div>h1{
     font-size: 48px !important;
     margin-bottom: 2.537rem;
@@ -218,24 +288,31 @@
     color: #FFFFFF;
     text-decoration: none;
 }
-/* .reference-container>div:nth-child(2)>div{
-    display: flex;
-} */
 .reference-container>div:nth-child(2){
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 1.25rem;
     padding-top: 3.5rem;
     text-align: center;
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
 }
 .header-footer>div>div:nth-child(2){
     color: white;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     font-weight: bold;
 }
 .header-footer>div:nth-child(2){
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .reference-icons{
@@ -247,13 +324,19 @@
     font-size: 37.4px;
     line-height: 38px;
     padding-bottom: 1rem;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(20deg) brightness(103%) contrast(101%);
+    -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(20deg) brightness(103%) contrast(101%);
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(20deg) brightness(103%) contrast(101%);
 }
 .envoltorio>.uno,
 .envoltorio>.dos,
 .envoltorio>.tres{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: .5rem 1rem;
     color: white;
     font-family: 'Work Sans';
