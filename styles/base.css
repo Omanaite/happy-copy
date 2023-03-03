@@ -15,9 +15,8 @@
   --clr-neutral-600: #1d1d1d08;}
 
   /* For -FONTS-, use in order of appearance in the site:
-        #ffffff, #142544, #1d1d1d, FAQ section: #29a8f8; SUBFOOTER: color: #e0e0e0;
-
-    */
+    #ffffff, #142544, #1d1d1d, FAQ section: #29a8f8; SUBFOOTER: color: #e0e0e0;
+  */
 
 /* TYPOGRAPHY */
 
@@ -28,8 +27,7 @@ html {
   font-size: clamp(1em, 1em + 0.2vw, 3em);
   word-break: break-word;
   line-height: 1.35;
-  font-family: "Work Sans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif;
+  font-family: "Work Sans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /* header scaling with variable scale
@@ -85,10 +83,65 @@ p {
   margin-top: 0.3rem;
 }
 
+small {font-size: 0.8rem;}
+
 .italic{
-    font-style: italic;
+  font-style: italic;
 }
 
+/* "Reduce shipping costs..." section */
+
+#reduceShippingCosts {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 4vw 8vw;
+
+}
+
+.bigTopMargin {
+  margin-top: 2rem;
+}
+
+.noTopMargin {
+  margin-top: 0;
+}
+
+button {
+  background-color: var(--clr-primary-300);
+  color: white;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border-style: none;
+  font-size: initial;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+/* "Benefits for buyers..." section */
+
+#benefitsForBuyers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-accent-200);
+  padding: 4vw 8vw;
+}
+
+.bfbCard {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.sectionIcon {
+  width: 3rem;
+}
 
 /* FOOTER */
 
@@ -102,12 +155,12 @@ p {
   margin-right: auto;
   margin-left: auto;
   padding-top: 16px;
+  padding-bottom: 1.5rem;
 }
 
 .white-text{
-    color: #ffffff;
-    text-decoration:none;
-
+  color: #ffffff;
+  text-decoration:none;
 }
 
 .flex {
@@ -139,7 +192,7 @@ p {
   align-content: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding: 0 10px ;
+  padding: 10px 25px;
   /* flex-basis: 25%; */
 }
 
@@ -148,62 +201,38 @@ p {
   color: #29a8f8;
 }
 .subfooter{
-display: flex;
-justify-content: center;
-background-color: #1d1d1d;
-color: rgba(255,255,255,0.5) ;
-padding: 4px;
+  display: flex;
+  justify-content: center;
+  background-color: #1d1d1d;
+  color: rgba(255,255,255,0.5) ;
+  padding: 4px;
 }
 
-/* DIRECT STYLING */
-
-#reduceShippingCosts {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    padding: 4vw 8vw;
-
+.smContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
 }
 
-.bigTopMargin {
-    margin-top: 2rem;
+.footerButton {
+  width: 60px;
+  height: 60px;
+  background-color: var(--clr-primary-300);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.noTopMargin {
-    margin-top: 0;
+.footerButton object {
+  width: 40px;
+  height: 40px;
 }
 
-button {
-    background-color: var(--clr-primary-300);
-    color: white;
-    border-radius: 8px;
-    padding: 0.5rem 1rem;
-    font-weight: 700;
-    border-style: none;
-    font-size: initial;
+.footerButtonShadow {
+  height: 10px; 
+  width: 70px; 
+  border-radius: 100%; 
+  background: radial-gradient(black, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
 }
-
-.fw700 {
-    font-weight: 700;
-}
-
-.bfbCard {
-    margin: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-}
-
-#benefitsForBuyers {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--clr-accent-200);
-    padding: 4vw 8vw;
-}
-
-.sectionIcon {
-    width: 3rem;
-}
-
