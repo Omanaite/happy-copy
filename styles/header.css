@@ -255,7 +255,21 @@
     width: 600px;
     height: 444.38px;
     border: #ffffff solid 1px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
+
+.gameCard {
+  min-width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+}
+
 .reference-container{
     width: 780px;
     height: 391.23px;
