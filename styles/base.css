@@ -96,17 +96,24 @@ hr {
   border: 0;
   height: 1px;
   background-color: black;
-  width: 80vw;
+  width: 89vw;
 }
 
 .flex-faq {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 1.4rem;
   padding-bottom: 1rem;
   align-content: center;
-  }
+  vertical-align: middle;
+}
+.center {
+  display: flex;
+  align-items: center;
+}
+
 .homepage-title-icon {
   display: flex;
   align-items: center;
@@ -119,16 +126,24 @@ hr {
 }
 
 .FAQ-container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
 }
-
+.blue-text {
+  color: #29a8f8;
+  font-size: 0.85rem;
+}
 .question {
-  background-color: #f0f0f0;
+  background-color: #1d1d1d08;
   padding: 10px;
   cursor: pointer;
 }
-
+.answer {
+  color: #1d1d1d;
+  font-size: 0.85rem;
+}
 .content {
   background-color: #fff;
   padding: 10px;
@@ -137,6 +152,8 @@ hr {
 
 .content p {
   margin: 0;
+  color: #1d1d1d;
+  font-size: 0.85rem;
 }
 
 /* add transition effect */
@@ -147,6 +164,7 @@ hr {
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  border: 1px solid #e0e0e0;
 }
 
 /* FOOTER */
