@@ -1,56 +1,80 @@
 /* COLORS */
 
-:root{
-    /* Primary */
---clr-primary-800: #142544 ;
---clr-primary-300: #29a8f8;
+:root {
+  /* Primary */
+  --clr-primary-800: #142544;
+  --clr-primary-300: #29a8f8;
 
-    /* accent */
---clr-accent-200: #e0e0e0;
---clr-accent-0: #ffffff;
+  /* accent */
+  --clr-accent-200: #e0e0e0;
+  --clr-accent-0: #ffffff;
 
-    /* neutral */
---clr-neutral-900: #1d1d1d;
---clr-neutral-800: #1d1d1dcc;
---clr-neutral-600: #1d1d1d08;
+  /* neutral */
+  --clr-neutral-900: #1d1d1d;
+  --clr-neutral-800: #1d1d1dcc;
+  --clr-neutral-600: #1d1d1d08;}
 
-    /* For -FONTS-, use in order of appearance in the site:
-        #ffffff, #142544, #1d1d1d, FAQ section: #29a8f8;
+  /* For -FONTS-, use in order of appearance in the site:
+        #ffffff, #142544, #1d1d1d, FAQ section: #29a8f8; SUBFOOTER: color: #e0e0e0;
+
     */
-
-}
 
 /* TYPOGRAPHY */
 
 /* fluid typography base size, which respects user defined base size + sane breaking
  * https://css-tricks.com/simplified-fluid-typography/ 
  * sanitize.css */
- html {
-    font-size: clamp(1em, 1em + 0.2vw, 3em);
-    word-break: break-word;
-    line-height: 1.35;
-    font-family: 'Work Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+html {
+  font-size: clamp(1em, 1em + 0.2vw, 3em);
+  word-break: break-word;
+  line-height: 1.35;
+  font-family: "Work Sans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
 }
 
 /* header scaling with variable scale
  * https://stackoverflow.com/questions/61079916/css-calc-exponential-division#61080187
  * https://typescale.com/ */
 :root {
-    --headerScale: 1.2;
-    --h6:calc(1rem      * var(--headerScale));
-    --h5:calc(var(--h6) * var(--headerScale));
-    --h4:calc(var(--h5) * var(--headerScale));
-    --h3:calc(var(--h4) * var(--headerScale));
-    --h2:calc(var(--h3) * var(--headerScale));
-    --h1:calc(var(--h2) * var(--headerScale));
+  --headerScale: 1.2;
+  --h6: calc(1rem * var(--headerScale));
+  --h5: calc(var(--h6) * var(--headerScale));
+  --h4: calc(var(--h5) * var(--headerScale));
+  --h3: calc(var(--h4) * var(--headerScale));
+  --h2: calc(var(--h3) * var(--headerScale));
+  --h1: calc(var(--h2) * var(--headerScale));
 }
 
-h1 { font-size: var(--h1); margin: 0                            0 0 0; font-weight: 700;}
-h2 { font-size: var(--h2); margin: calc(var(--h2) * 0.7 + 1rem) 0 0 0; font-weight: 700;}
-h3 { font-size: var(--h3); margin: calc(var(--h3) * 0.7 + 1rem) 0 0 0; font-weight: 700;}
-h4 { font-size: var(--h4); margin: calc(var(--h4) * 0.7 + 1rem) 0 0 0; font-weight: 700;}
-h5 { font-size: var(--h5); margin: calc(var(--h5) * 0.7 + 1rem) 0 0 0; font-weight: 700;}
-h6 { font-size: var(--h6); margin: calc(var(--h6) * 0.7 + 1rem) 0 0 0; font-weight: 700;}
+h1 {
+  font-size: var(--h1);
+  margin: 0 0 0 0;
+  font-weight: 700;
+}
+h2 {
+  font-size: var(--h2);
+  margin: calc(var(--h2) * 0.7 + 1rem) 0 0 0;
+  font-weight: 700;
+}
+h3 {
+  font-size: var(--h3);
+  margin: calc(var(--h3) * 0.7 + 1rem) 0 0 0;
+  font-weight: 700;
+}
+h4 {
+  font-size: var(--h4);
+  margin: calc(var(--h4) * 0.7 + 1rem) 0 0 0;
+  font-weight: 700;
+}
+h5 {
+  font-size: var(--h5);
+  margin: calc(var(--h5) * 0.7 + 1rem) 0 0 0;
+  font-weight: 700;
+}
+h6 {
+  font-size: var(--h6);
+  margin: calc(var(--h6) * 0.7 + 1rem) 0 0 0;
+  font-weight: 700;
+}
 
 h1 + h2,
 h2 + h3,
@@ -58,7 +82,77 @@ h3 + h4,
 h4 + h5,
 h5 + h6,
 p {
-    margin-top: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.italic{
+    font-style: italic;
+}
+
+
+/* FOOTER */
+
+.footer {
+  display: grid;
+  background-color: #142544;
+  align-items: center;
+  justify-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 16px;
+}
+
+.white-text{
+    color: #ffffff;
+    text-decoration:none;
+
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.grid {
+  display: grid;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.padd{
+ 
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align:center;
+  justify-items: center;
+  color: #ffffff;
+ 
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0 10px ;
+  /* flex-basis: 25%; */
+}
+
+.text-tertiary {
+  font-weight: 600;
+  color: #29a8f8;
+}
+.subfooter{
+display: flex;
+justify-content: center;
+background-color: #1d1d1d;
+color: rgba(255,255,255,0.5) ;
+padding: 4px;
 }
 
 /* DIRECT STYLING */
@@ -112,3 +206,4 @@ button {
 .sectionIcon {
     width: 3rem;
 }
+
