@@ -273,7 +273,7 @@
     margin-top: 5rem;
     padding-bottom: 1.524rem;
 }
-.reference-container>div>a{
+/* .reference-container>div>a{
     background: #29A8F8;
     border: 1px solid #29A8F8;
     border-radius: 8px;
@@ -287,7 +287,7 @@
     text-align: center;
     color: #FFFFFF;
     text-decoration: none;
-}
+} */
 .reference-container>div:nth-child(2){
     display: -webkit-box;
     display: -ms-flexbox;

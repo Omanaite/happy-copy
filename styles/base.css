@@ -3,6 +3,7 @@
 :root {
   /* Primary */
   --clr-primary-800: #142544;
+  --clr-primary-400: #0099f1;
   --clr-primary-300: #29a8f8;
 
   /* accent */
@@ -110,11 +111,25 @@ small {font-size: 0.8rem;}
 button {
   background-color: var(--clr-primary-300);
   color: white;
+  border-style: none;
+}
+
+main button {
   border-radius: 8px;
   padding: 0.5rem 1rem;
   font-weight: 700;
-  border-style: none;
   font-size: initial;
+}
+
+.head-mid-wrapper button {
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: initial;
+  font-size: 0.6rem;
+}
+
+button:hover {
+  background-color: var(--clr-primary-400);
 }
 
 .fw700 {
@@ -223,6 +238,10 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footerButton:hover {
+  background-color: var(--clr-primary-400);
 }
 
 .footerButton object {
