@@ -83,6 +83,8 @@ p {
   margin-top: 0.3rem;
 }
 
+small {font-size: 0.8rem;}
+
 .italic{
   font-style: italic;
 }
