@@ -251,7 +251,7 @@
     display: -ms-flexbox;
     display: flex;
 }
-.footer-slider-container{
+.footer-slider-cardContainer{
     width: 600px;
     height: 444.38px;
     border: #ffffff solid 1px;
@@ -259,7 +259,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    /* gap: 1rem; */
+    position: relative;
+    transition-duration: 0.5s;
+    transition-property: justify-content, align-items;
+    transition-timing-function: linear;
 }
 
 .gameCard {
@@ -268,6 +272,18 @@
   border-radius: 10px;
   background-color: white;
   color: black;
+  margin: 0 1rem;
+  transition-duration: 0.5s;
+  transition-property: min-width, margin;
+  transition-timing-function: linear;
+}
+
+.gameCard__shrunk {
+  min-width: 0px;
+  margin: 0rem;
+  transition-duration: 0.5s;
+  transition-property: min-width, margin;
+  transition-timing-function: linear;
 }
 
 .reference-container{
