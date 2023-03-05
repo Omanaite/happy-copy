@@ -16,7 +16,7 @@
   --clr-neutral-600: #1d1d1d08;
 }
 
-  /* For -FONTS-, use in order of appearance in the site:
+/* For -FONTS-, use in order of appearance in the site:
     #ffffff, #142544, #1d1d1d, FAQ section: #29a8f8; SUBFOOTER: color: #e0e0e0;
   */
 
@@ -29,7 +29,8 @@ html {
   font-size: clamp(1em, 1em + 0.2vw, 3em);
   word-break: break-word;
   line-height: 1.35;
-  font-family: "Work Sans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Work Sans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
 }
 
 /* header scaling with variable scale
@@ -127,9 +128,9 @@ hr {
 .FAQ-container {
   width: 90%;
   margin: 0 auto;
-  border-radius: 20px;
   border: 1px solid #e0e0e0;
-  border-radius: 15%;
+  border-radius: 15px;
+  background-color: white;
 }
 .blue-text {
   color: #29a8f8;
@@ -167,8 +168,9 @@ hr {
   border: 1px solid #e0e0e0;
 }
 
-small {font-size: 0.8rem;}
-
+small {
+  font-size: 0.8rem;
+}
 
 /* "Reduce shipping costs..." section */
 
@@ -177,7 +179,6 @@ small {font-size: 0.8rem;}
   flex-direction: row;
   background-color: white;
   padding: 4vw 8vw;
-
 }
 
 .bigTopMargin {
@@ -292,11 +293,11 @@ button:hover {
   font-weight: 600;
   color: #29a8f8;
 }
-.subfooter{
+.subfooter {
   display: flex;
   justify-content: center;
   background-color: #1d1d1d;
-  color: rgba(255,255,255,0.5) ;
+  color: rgba(255, 255, 255, 0.5);
   padding: 4px;
 }
 
@@ -327,8 +328,8 @@ button:hover {
 }
 
 .footerButtonShadow {
-  height: 10px; 
-  width: 70px; 
-  border-radius: 100%; 
+  height: 10px;
+  width: 70px;
+  border-radius: 100%;
   background: radial-gradient(black, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
 }
