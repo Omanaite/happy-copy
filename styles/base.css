@@ -68,7 +68,7 @@ h4 {
 }
 h5 {
   font-size: var(--h5);
-  /* margin: calc(var(--h5) * 0.7 + 1rem) 0 0 0; */
+  margin: calc(var(--h5) * 0.7 + 1rem) 0 0 0;
   font-weight: 700;
 }
 h6 {
