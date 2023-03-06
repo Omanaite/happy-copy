@@ -174,19 +174,11 @@ small {
 
 /* "Reduce shipping costs..." section */
 
-#reduceShippingCosts {
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-  padding: 4vw 8vw;
-}
-
 .bigTopMargin {
   margin-top: 2rem;
   align-items: center;
   align-content: center;
   /* text-align: center; */
-
 }
 
 .noTopMargin {
@@ -341,17 +333,32 @@ button:hover {
 .bfbLevel {
   display: flex;
 }
-.sRc {
+.rSc {
   display: grid;
   width: 50%;
   display: flex;
   flex-direction: column;
+  min-width: 31.25rem;
+  margin: 0 0.5rem;
+
   /* justify-content: center; */
   /* text-align: center; */
+}
+#reduceShippingCosts {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 4vw 8vw;
 }
 /* Responsiveness Midsection Mateus */
 
 @media (max-width: 48rem) {
+  #reduceShippingCosts {
+    display: grid;
+    /* margin: 1rem 1rem; */
+    justify-items: center;
+    padding: 0 0;
+  }
   .benefitsForBuyers {
     display: bloc;
     /* border: 5px red solid; */
@@ -367,10 +374,9 @@ button:hover {
     text-align: center;
     margin: 1rem 1rem;
   }
-  #reduceShippingCosts {
-    display: grid;
-    /* margin: 1rem 1rem; */
-    justify-items: center;
+
+  .video {
+    width: 75dvw;
+    padding: 1rem 0 ;
   }
-.video{width: 95%;}
 }
