@@ -5,6 +5,8 @@
 * Browsers: last 4 version
 */
 
+/* HEADER TOP */
+
 .header-top-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -83,9 +85,14 @@
   width: 1.8rem;
   flex-direction: column;
 }
+
+/* HEADER MIDDLE */
+
 .header-mid-wrapper {
-  margin-left: 2rem;
+  margin: 0 2rem;
   overflow: scroll;
+  padding: 0.5rem 0;
+  display: flex;
 }
 
 @media (max-width: 48rem) {
@@ -94,16 +101,27 @@
   }
 }
 
-.header-mid-wrapper > div {
-  justify-content: space-between;
-  align-items: center;
-}
-.header-mid-wrapper > div,
-.header-mid-wrapper > div > ul {
+.hmw-cardList {
   display: flex;
   gap: 1.5rem;
 }
-.header-mid-wrapper > div > div > a {
+
+.hmw-cardList > li {
+  display: flex;
+  gap: 0.216rem;
+  font-size: 16px;
+  word-break: keep-all;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.hmw-cardList > li > img {
+  width: 10px;
+  filter: invert(49%) sepia(96%) saturate(525%) hue-rotate(170deg)
+    brightness(97%) contrast(101%);
+}
+
+.header-mid-wrapper > div > a {
   width: 126.88px;
   height: 29.19px;
   background: #29a8f8;
@@ -117,37 +135,14 @@
   font-weight: 400;
   font-size: 12.8px;
   line-height: 19px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   text-align: center;
   margin-top: 0.288rem;
   margin-bottom: 0.35rem;
 }
-.header-mid-wrapper > div > ul > li > img {
-  width: 10px;
-  height: 16px;
-  font-weight: 900;
-  font-size: 16px;
-  align-items: center;
-  filter: invert(49%) sepia(96%) saturate(525%) hue-rotate(170deg)
-    brightness(97%) contrast(101%);
-}
-.header-mid-wrapper > div > ul > li {
-  display: flex;
-  gap: 0.216rem;
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  word-break: keep-all;
-  white-space: nowrap;
-}
-.header-mid-wrapper > div > ul > {
-  gap: 1.5rem;
-}
-.header-mid-wrapper > div > div > a > img {
+
+.header-mid-wrapper > div > a > img {
   height: 12.8px;
   margin-right: 0.25rem;
   margin-left: 0.5rem;
@@ -157,6 +152,9 @@
 .header-mid-wrapper > div > div {
   margin-right: 1rem;
 }
+
+/* HEADER BOTTOM */
+
 .header-bottom-wrapper {
   height: 34.66px;
   background: #2f9659;
