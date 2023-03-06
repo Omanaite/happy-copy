@@ -3,6 +3,7 @@
 :root {
   /* Primary */
   --clr-primary-800: #142544;
+  --clr-primary-400: #0099f1;
   --clr-primary-300: #29a8f8;
 
   /* accent */
@@ -12,9 +13,10 @@
   /* neutral */
   --clr-neutral-900: #1d1d1d;
   --clr-neutral-800: #1d1d1dcc;
-  --clr-neutral-600: #1d1d1d08;}
+  --clr-neutral-600: #1d1d1d08;
+}
 
-  /* For -FONTS-, use in order of appearance in the site:
+/* For -FONTS-, use in order of appearance in the site:
     #ffffff, #142544, #1d1d1d, FAQ section: #29a8f8; SUBFOOTER: color: #e0e0e0;
   */
 
@@ -27,7 +29,8 @@ html {
   font-size: clamp(1em, 1em + 0.2vw, 3em);
   word-break: break-word;
   line-height: 1.35;
-  font-family: "Work Sans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Work Sans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
 }
 
 /* header scaling with variable scale
@@ -65,7 +68,7 @@ h4 {
 }
 h5 {
   font-size: var(--h5);
-  margin: calc(var(--h5) * 0.7 + 1rem) 0 0 0;
+  /* margin: calc(var(--h5) * 0.7 + 1rem) 0 0 0; */
   font-weight: 700;
 }
 h6 {
@@ -83,10 +86,90 @@ p {
   margin-top: 0.3rem;
 }
 
-small {font-size: 0.8rem;}
-
-.italic{
+.italic {
   font-style: italic;
+}
+
+/*FAQ*/
+hr {
+  margin: 0;
+  border: 0;
+  height: 1px;
+  background-color: black;
+  width: 89vw;
+}
+
+.flex-faq {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.4rem;
+  padding-bottom: 1rem;
+  align-content: center;
+  vertical-align: middle;
+}
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.homepage-title-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: #4f4f4f;
+  border: 1px solid #4f4f4f;
+  border-radius: 100%;
+}
+
+.FAQ-container {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  background-color: white;
+}
+.blue-text {
+  color: #29a8f8;
+  font-size: 0.85rem;
+}
+.question {
+  background-color: #1d1d1d08;
+  padding: 10px;
+  cursor: pointer;
+}
+.answer {
+  color: #1d1d1d;
+  font-size: 0.85rem;
+}
+.content {
+  background-color: #fff;
+  padding: 10px;
+  display: none; /* hide by default */
+}
+
+.content p {
+  margin: 0;
+  color: #1d1d1d;
+  font-size: 0.85rem;
+}
+
+/* add transition effect */
+.question,
+.content {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid #e0e0e0;
+}
+
+small {
+  font-size: 0.8rem;
 }
 
 /* "Reduce shipping costs..." section */
@@ -96,7 +179,6 @@ small {font-size: 0.8rem;}
   flex-direction: row;
   background-color: white;
   padding: 4vw 8vw;
-
 }
 
 .bigTopMargin {
@@ -110,11 +192,25 @@ small {font-size: 0.8rem;}
 button {
   background-color: var(--clr-primary-300);
   color: white;
+  border-style: none;
+}
+
+main button {
   border-radius: 8px;
   padding: 0.5rem 1rem;
   font-weight: 700;
-  border-style: none;
   font-size: initial;
+}
+
+.head-mid-wrapper button {
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: initial;
+  font-size: 0.6rem;
+}
+
+button:hover {
+  background-color: var(--clr-primary-400);
 }
 
 .fw700 {
@@ -158,16 +254,15 @@ button {
   padding-bottom: 1.5rem;
 }
 
-.white-text{
+.white-text {
   color: #ffffff;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
 .grid {
   display: grid;
@@ -175,14 +270,12 @@ button {
   align-items: center;
   justify-items: center;
 }
-.padd{
- 
+.padd {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  text-align:center;
+  text-align: center;
   justify-items: center;
   color: #ffffff;
- 
 }
 .footer-content {
   display: flex;
@@ -200,11 +293,11 @@ button {
   font-weight: 600;
   color: #29a8f8;
 }
-.subfooter{
+.subfooter {
   display: flex;
   justify-content: center;
   background-color: #1d1d1d;
-  color: rgba(255,255,255,0.5) ;
+  color: rgba(255, 255, 255, 0.5);
   padding: 4px;
 }
 
@@ -225,14 +318,18 @@ button {
   align-items: center;
 }
 
+.footerButton:hover {
+  background-color: var(--clr-primary-400);
+}
+
 .footerButton object {
   width: 40px;
   height: 40px;
 }
 
 .footerButtonShadow {
-  height: 10px; 
-  width: 70px; 
-  border-radius: 100%; 
+  height: 10px;
+  width: 70px;
+  border-radius: 100%;
   background: radial-gradient(black, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
 }
