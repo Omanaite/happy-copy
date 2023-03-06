@@ -266,6 +266,21 @@
     transition-timing-function: linear;
 }
 
+.sliderButton {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.sliderButton__left {
+    transform: translateX(-1.5rem);
+}
+
+.sliderButton__right {
+    transform: translateX(1.5rem);
+}
+
 .gameCard {
   min-width: 200px;
   height: 300px;
