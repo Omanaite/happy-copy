@@ -183,7 +183,9 @@ small {
 
 .bigTopMargin {
   margin-top: 2rem;
-  text-align: center;
+  align-items: center;
+  align-content: center;
+  /* text-align: center; */
 
 }
 
@@ -340,10 +342,12 @@ button:hover {
   display: flex;
 }
 .sRc {
+  display: grid;
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
+  /* text-align: center; */
 }
 /* Responsiveness Midsection Mateus */
 
@@ -357,8 +361,8 @@ button:hover {
   }
   .rSc {
     display: grid;
-    /* align-items: center; */
-    justify-content: center;
+    align-items: center;
+    /* justify-content: center; */
     justify-items: center;
     text-align: center;
     margin: 1rem 1rem;
@@ -368,4 +372,5 @@ button:hover {
     /* margin: 1rem 1rem; */
     justify-items: center;
   }
+.video{width: 95%;}
 }
