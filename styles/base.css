@@ -183,6 +183,8 @@ small {
 
 .bigTopMargin {
   margin-top: 2rem;
+  text-align: center;
+
 }
 
 .noTopMargin {
@@ -337,21 +339,33 @@ button:hover {
 .bfbLevel {
   display: flex;
 }
+.sRc {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /* Responsiveness Midsection Mateus */
 
 @media (max-width: 48rem) {
   .benefitsForBuyers {
     display: bloc;
-    border: 5px red solid;
+    /* border: 5px red solid; */
   }
   .bfbLevel {
     display: grid;
   }
-  .rSc{
+  .rSc {
     display: grid;
+    /* align-items: center; */
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin: 1rem 1rem;
   }
-  #reduceShippingCosts{
+  #reduceShippingCosts {
     display: grid;
-    margin: 0 auto;
+    /* margin: 1rem 1rem; */
+    justify-items: center;
   }
 }
