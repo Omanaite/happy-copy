@@ -71,6 +71,10 @@ h5 {
   margin: calc(var(--h5) * 0.7 + 1rem) 0 0 0;
   font-weight: 700;
 }
+/* @media(max-width: 48rem){
+  h5{margin-top: 0; margin-right: 1rem;}
+} */
+
 h6 {
   font-size: var(--h6);
   margin: calc(var(--h6) * 0.7 + 1rem) 0 0 0;
@@ -96,7 +100,9 @@ hr {
   border: 0;
   height: 1px;
   background-color: black;
-  width: 89vw;
+  /* width: 89vw; */
+  flex: 1 1 auto !important;
+
 }
 
 .flex-faq {
@@ -112,8 +118,15 @@ hr {
 .center {
   display: flex;
   align-items: center;
+/* pablo addition */
+  width: 90%;
+  margin: auto;
+  padding: 1rem 0;
 }
-
+.center>h5{
+  margin-top: 0;
+  margin-right: 1rem;
+}
 .homepage-title-icon {
   display: flex;
   align-items: center;
@@ -132,6 +145,11 @@ hr {
   border-radius: 15px;
   background-color: white;
 }
+@media (max-width: 48rem){
+  .FAQ-container{
+    margin-bottom: 1rem;
+  }
+}
 .blue-text {
   color: #29a8f8;
   font-size: 0.85rem;
@@ -140,6 +158,14 @@ hr {
   background-color: #1d1d1d08;
   padding: 10px;
   cursor: pointer;
+}
+.question:first-child{
+  border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.bottom-border-radius-faq-last-child{
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .answer {
   color: #1d1d1d;
@@ -252,6 +278,8 @@ button:hover {
   margin-left: auto;
   padding-top: 16px;
   padding-bottom: 1.5rem;
+  /* pablo adittion */
+  margin-top: 1rem;
 }
 
 .white-text {
@@ -332,4 +360,18 @@ button:hover {
   width: 70px;
   border-radius: 100%;
   background: radial-gradient(black, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}
+.pl-m{
+
+}
+@media(max-width:48rem){
+  .pl-m{
+    margin-left: 0.314rem;
+  }
+}
+
+@media(max-width:48rem){
+  .bfbCards{
+    flex-direction: column;
+  }
 }
