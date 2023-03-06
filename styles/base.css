@@ -333,3 +333,25 @@ button:hover {
   border-radius: 100%;
   background: radial-gradient(black, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
 }
+
+.bfbLevel {
+  display: flex;
+}
+/* Responsiveness Midsection Mateus */
+
+@media (max-width: 48rem) {
+  .benefitsForBuyers {
+    display: bloc;
+    border: 5px red solid;
+  }
+  .bfbLevel {
+    display: grid;
+  }
+  .rSc{
+    display: grid;
+  }
+  #reduceShippingCosts{
+    display: grid;
+    margin: 0 auto;
+  }
+}
