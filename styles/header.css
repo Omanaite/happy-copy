@@ -250,10 +250,74 @@
     display: -ms-flexbox;
     display: flex;
 }
-.footer-slider-container{
-    width: 600px;
-    height: 444.38px;
+.footer-slider-cardContainer{
+    /* border: #ffffff solid 1px; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1rem; */
+    position: relative;
+    transition-duration: 0.5s;
+    transition-property: justify-content, align-items;
+    transition-timing-function: linear;
 }
+
+.sliderButton {
+    min-width: 2rem;
+    min-height: 2rem;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+.sliderButton__left {
+    transform: translateX(3rem);
+}
+
+.sliderButton__right {
+    transform: translateX(-3rem);
+}
+
+.sliderFader {
+    min-width: 1.5rem; 
+    height: 100%; 
+    z-index: 1;
+}
+
+.sliderFader__left {
+    transform: translateX(1rem); 
+    background: linear-gradient(to right, var(--clr-primary-800), transparent);
+}
+
+.sliderFader__right {
+    transform: translateX(-1rem); 
+    background: linear-gradient(to left, var(--clr-primary-800), transparent);
+}
+
+.gameCard {
+  min-width: 10rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  color: black;
+  margin: 0 0.5rem;
+  transition-duration: 0.5s;
+  transition-property: min-width, margin;
+  transition-timing-function: linear;
+}
+
+.gameCard__shrunk {
+  min-width: 0px;
+  margin: 0rem;
+  transition-duration: 0.5s;
+  transition-property: min-width, margin;
+  transition-timing-function: linear;
+}
+
 .reference-container{
     width: 780px;
     height: 391.23px;
