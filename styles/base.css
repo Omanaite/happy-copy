@@ -68,7 +68,7 @@ h4 {
 }
 h5 {
   font-size: var(--h5);
-  margin: calc(var(--h5) * 0.7 + 1rem) 0 0 0;
+  /* margin: calc(var(--h5) * 0.7 + 1rem) 0 0 0; */
   font-weight: 700;
 }
 /* @media(max-width: 48rem){
@@ -209,6 +209,8 @@ small {
 
 .bigTopMargin {
   margin-top: 2rem;
+  text-align: center;
+
 }
 
 .noTopMargin {
@@ -245,7 +247,7 @@ button:hover {
 
 /* "Benefits for buyers..." section */
 
-#benefitsForBuyers {
+.benefitsForBuyers {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -361,6 +363,7 @@ button:hover {
   border-radius: 100%;
   background: radial-gradient(black, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
 }
+
 .pl-m{
 
 }
@@ -375,3 +378,39 @@ button:hover {
     flex-direction: column;
   }
 }
+
+
+.bfbLevel {
+  display: flex;
+}
+.sRc {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Responsiveness Midsection Mateus */
+
+@media (max-width: 48rem) {
+  .benefitsForBuyers {
+    display: bloc;
+    /* border: 5px red solid; */
+  }
+  .bfbLevel {
+    display: grid;
+  }
+  .rSc {
+    display: grid;
+    /* align-items: center; */
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin: 1rem 1rem;
+  }
+  #reduceShippingCosts {
+    display: grid;
+    /* margin: 1rem 1rem; */
+    justify-items: center;
+  }
+}
+
