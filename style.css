@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .midEntry {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .dropDownArrow {
+        height: 16px;   
+        font-weight: 900;   
+        font-size: 16px;    
+        align-items: center;    
+        filter: invert(49%) sepia(96%) saturate(525%) hue-rotate(170deg) brightness(97%) contrast(101%);    
+    }
+    .noBreak {
+        white-space: nowrap;
+        word-break: keep-all;
+    }
+}
