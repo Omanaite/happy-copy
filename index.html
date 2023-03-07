@@ -14,30 +14,22 @@
     <script defer src="js/sliderAttempt.js"></script>
 </head>
 <body>
-  <div id="app"></div>
   <script type="module" src="/main.js"></script>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
     <main>
         <header>
             <nav>
-                <div class="header-top-wrapper">
-                    <img class="header-top__logo" src="assets/images/logo_dark.svg">
-                    <div></div>
-                    <div>
-                        <a class="login-anchor" href="#">
-                            <div class="wrapper-login">
-                                <img class="login-cart" src="assets/images/arrow-right-to-bracket-solid.svg">
-                                Log In
-                            </div> 
-                        </a>
-                        <a class="login-anchor" href="#">
-                            <div class="wrapper-cart">
-                                <img class="login-cart" src="assets/images/cart3.svg">
-                                Cart
-                            </div>
-                        </a>
+                <div class="flex items-center bg-blue-900 gap-5 p-5">
+                    <img class="h-10" src="assets/images/logo_dark.svg">
+                    <input class="bg-white rounded-full h-10 grow border-none"></input>
+                    <a class="flex flex-col items-center" href="#">
+                          <img class="h-6" src="assets/images/arrow-right-to-bracket-solid.svg">
+                          <p class="text-white text-sm">Log In</p>
+                    </a>
+                    <a class="flex flex-col items-center" href="#">
+                          <img class="h-6" src="assets/images/cart3.svg">
+                          <p class="text-white text-sm">Cart</p>
+                    </a>
+                    <div class="flex row gap-5">
                     </div>
                 </div>
             </nav>
