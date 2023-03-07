@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/test.css">
+    <link rel="stylesheet" href="styles/work-sans-font.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <title>happy-copy</title>
+    <script defer src="js/sliderAttempt.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <div class="header-top-wrapper">
+                    <img class="header-top__logo" src="assets/images/logo_dark.svg">
+                    <div></div>
+                    <div>
+                        <a class="login-anchor" href="#">
+                            <div class="wrapper-login">
+                                <img class="login-cart" src="assets/images/arrow-right-to-bracket-solid.svg">
+                                Log In
+                            </div> 
+                        </a>
+                        <a class="login-anchor" href="#">
+                            <div class="wrapper-cart">
+                                <img class="login-cart" src="assets/images/cart3.svg">
+                                Cart
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-mid-wrapper">
+                <div>
+                    <ul>
+                        <li>Magic: the Gathering<img src="assets/images/caret-down-solid.svg"></li>
+                        <li>Pokémon<img src="assets/images/caret-down-solid.svg"></li>
+                        <li>Yu-Gi-Oh!<img src="assets/images/caret-down-solid.svg"></li>
+                        <li>Flesh and Blood<img src="assets/images/caret-down-solid.svg"></li>
+                        <li>Digimo<img src="assets/images/caret-down-solid.svg"></li>
+                        <li>Funko<img src="assets/images/caret-down-solid.svg"></li>
+                        <li>Final Fantasy<img src="assets/images/caret-down-solid.svg"></li>
+                        <li>Force of Will<img src="assets/images/caret-down-solid.svg"></li>
+                        <li>All Games<img src="assets/images/caret-down-solid.svg"></li>
+                    </ul>
+                    <div>
+                        <a href="#"><img src="assets/images/rocket-solid.svg">Cart Optimizer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom-wrapper">
+                FREE SHIPPING on all CardTrader Zero orders over $25 (only singles). The next best thing in your life!
+            </div>
+            <div class="header-footer">
+                <div>
+                    <div class="header-footer__wrapper">
+                        <div class="">
+                            <img src="assets/images/star-solid.svg">
+                            <img src="assets/images/star-solid.svg">
+                            <img src="assets/images/star-solid.svg">
+                            <img src="assets/images/star-solid.svg">
+                            <img src="assets/images/star-solid.svg">
+                        </div>
+                        <div class="">Trusted by 21.800+ consumers every day</div>
+                    </div>
+                    <div class="choose-game">Choose your game</div>
+                </div>
+                <div class="">
+                    <div class="reference-container">
+                        <div class="">
+                            <h1>Your reference site for buying and selling card games</h1>
+                            <a href="#" ><button>Join now</button></a>
+                        </div>
+                        <div class="envoltorio">
+                            <div class="uno">
+                                <div><img class="reference-icons" src="assets/images/envelope-solid.svg"></div>
+                                <div><p>Register in less</br> than one minute</p></div>
+                            </div>
+                            <div class="dos">
+                                <div><img class="reference-icons" src="assets/images/shield-dog-solid.svg"></div>
+                                <div>You are always covered</div>
+                            </div>
+                            <div class="tres">
+                                <div><img class="reference-icons" src="assets/images/truck-solid.svg"></div>
+                                <div>The lowest </br>shipping costs</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slider" style="display: flex; align-items: center; width: 35rem; height: 20rem;">
+                      <button id="sliderLeft" class="sliderButton sliderButton__left"><</button>
+                      <div class="sliderFader sliderFader__left"></div>
+                        <div class="footer-slider-cardContainer">
+                          <div class="gameCard" id="card1">1</div>
+                          <div class="gameCard" id="card2">2</div>
+                          <div class="gameCard" id="card3">3</div>
+                          <div class="gameCard" id="card4">4</div>
+                          <div class="gameCard" id="card5">5</div>
+                          <div class="gameCard" id="card6">
+                            <img src="assets/images/yugioh.svg" alt="" style="width: 7rem;">
+                            <img src="assets/images/yugioh.webp" alt="" style="width: 9rem;">
+                          </div>
+                          <div class="gameCard" id="card7">
+                            <img src="assets/images/magic.svg" alt="" style="width: 7rem;">
+                            <img src="assets/images/magic.webp" alt="" style="width: 9rem;">
+                          </div>
+                          <div class="gameCard" id="card8">
+                            <img src="assets/images/pokemon.svg" alt="" style="width: 7rem;">
+                            <img src="assets/images/pokemon.webp" alt="" style="width: 9rem;">
+                          </div>
+                          <div class="gameCard" id="card9">9</div>
+                          <div class="gameCard" id="card10">10</div>
+                          <div class="gameCard" id="card11">11</div>
+                          <div class="gameCard" id="card12">12</div>
+                          <div class="gameCard" id="card13">13</div>
+                        </div>
+                      <div class="sliderFader sliderFader__right"></div>
+                      <button id="sliderRight" class="sliderButton sliderButton__right">></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="reduceShippingCosts">
+            <div class= "rSc">
+                <h2 class="noTopMargin">Reduce shipping costs with CardTrader Zero</h2>
+                <p class="bigTopMargin fw700">CardTrader Zero is our patented method that drastically lowers shipping costs for our users.</p>
+                <p class="bigTopMargin fw700">Buy from multiple sellers all over the world with a single shipment. </p>
+                <button class="bigTopMargin" style="align-self: flex-start;">Discover how it works</button>
+            </div>
+            <video controls width="50%" poster="assets/images/trading vid.png"></video>
+        </div>
+        <div class="benefitsForBuyers">
+            <h3 class="noTopMargin">Benefits for buyers:</h3>
+            <div class="bfbLevel">
+                <div class="bfbCard">
+                    <img src="assets/images/earth-americas-solid.svg" alt="" class="sectionIcon">
+                    <p class="fw700">Buy from any seller</p>
+                    <p class="bigTopMargin">Stop worrying about shipping costs, buy anything you want and save over 15% on your purchases.</p>
+                </div>
+                <div class="bfbCard">
+                    <img src="assets/images/handshake-solid.svg" alt="" class="sectionIcon">
+                    <p class="fw700">No more disputes</p>
+                    <p class="bigTopMargin">Our staff handles shipments and quality checks, you always receive what you want.</p>
+                </div>
+                <div class="bfbCard">
+                    <img src="assets/images/headset-solid.svg" alt="" class="sectionIcon">
+                    <p class="fw700">24/7 Customer care</p>
+                    <p class="bigTopMargin">CardTrader handles any order with 24/7 customer support. Issues are handled promptly.</p>
+                </div>
+            </div>
+            <button>Join now</button>
+        </div>
+    </main>
+    <div class="center">
+        <h5>FAQ</h5>
+        <hr />
+        <div class="homepage-title-icon"></div>
+
+    
+</div>
+
+
+
+<!-- create a section with class name of FAQ-container -->
+<section class="FAQ-container">
+    <!-- create a div with class name of question -->
+    <div class="question blue-text">
+      <!-- create a heading with the FAQ -->
+      <p>What about fees?</p>
+    </div>
+    <div class="content">
+      <p>Fees on sales are flat 5%, with unlimited listings.</p>
+    </div>
+    <!-- repeat for other FAQs and answers -->
+    <div class="question blue-text">
+      <p>How do payments work on CardTrader?</p>
+    </div>
+    <div class="content">
+      <p>Payments are centralized and held until the transactions complete successfully. This protects the sellers from complaints and chargebacks and protect the buyers from not receiving the goods.</p>
+    </div> <div class="question blue-text">
+        <p>How long does it take to start sellingon CardTrader?</p>
+      </div>
+      <div class="content">
+        <p>Just enter an email and a password to start selling, you won't have to lose time to do any authentication procedure. No need for any special requirements, just an email.</p>
+      </div>
+      <div class="question blue-text">
+        <p>How can I withdraw my funds from the platform?</p>
+      </div>
+      <div class="content">
+        <p>Your funds can be extracted via wire transfer completely free of charge, at any time and without any limit.</p>
+      </div>
+      <div class="question blue-text">
+        <p>I have a large number of cards but I already sell on other platforms, what can I do?</p>
+      </div>
+      <div class="content">
+        <p>Contact our staff at staff@cardtrader.com and we will be able to provide you a solution. Same applies if you have large quantities of not-listed cards: we will help you out.</p>
+      </div>
+      <div class="question blue-text bottom-border-radius-faq-last-child">
+        <p>What is the "Cart Optimizer</p>
+      </div>
+      <div class="content">
+        <p>Contact our staff at staff@cardtrader.com and we will be able to provide you a solution. Same applies if you have large quantities of not-listed cards: we will help you out.</p>
+      </div>
+
+  </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img alt="logo"
+                 class="grid"
+                 width="200"
+                 src="assets/logo_dark-357a5a338a239e725b3b7f045456852595a85bd65c5866875d5b987d6ed927ac.svg"
+            />
+        </div>
+        <div class=" padd"><small>CardTrader is the first and only worldwide cardgame marketplace, on a mission to improve your trading experience.</small></div>
+        <div class="flex ">
+            <div class="footer-content grid ">
+                <div class="footer-content">
+                    <b class="text-tertiary"><small>HELP</small></b>
+                    <a class="white-text" href="#"><small>Terms of Service</small></a>
+                    <a class="white-text" href="#"><small>Privacy Policy</small></a>
+                    <a class="white-text" href="#"><small>CT Zero Terms of Service</small></a>
+                    <a class="white-text" href="#"><small>Service</small></a>
+                    <a class="white-text" href="#"><small>Cookie Policy</small></a>
+                    <a class="white-text" href="#"><small>Payments, fees and refunds</small></a>
+                    <a class="white-text" href="#"><small>Shipping methods</small></a>
+                    <a class="white-text" href="#"><small>FAQ</small></a>
+                    <a class="white-text" href="#"><small>Contact us</small></a>
+
+                </div>
+            </div>
+            <div class="footer-content grid">
+                <div class="footer-content ">
+                    <b class="text-tertiary "><small>FEATURES</small></b>
+                    <a class="white-text" href="#"><small>CardTrade Zero</small></a>
+                    <a class="white-text" href="#"><small>CT Zero Shipping costs</small></a>
+                    <a class="white-text" href="#"><small>1-Day Ready</small></a>
+                    <a class="white-text" href="#"><small>Cart Optimizer</small></a>
+                    <a class="white-text" href="#"><small>Autopricer</small></a>
+                    <a class="white-text" href="#"><small>MTG Print</small></a>
+                    <a class="white-text" href="#"><small>API - Developers area</small></a>
+
+                </div>
+            </div>
+            <div class="footer-content grid">
+                <div class="footer-content ">
+                    <b class="text-tertiary"><small>HOW TO</small></b>
+                    <a class="white-text" href="#"><small>Card Condition</small></a>
+                    <a class="white-text" href="#"><small>Guide</small></a>
+                    <a class="white-text" href="#"><small>Identify card</small></a>
+                    <a class="white-text" href="#"><small>Languages</small></a>
+                    <a class="white-text" href="#"><small>Recognizing</small></a>
+                    <a class="white-text" href="#"><small>Different Printings</small></a>
+                    <a class="white-text" href="#"><small>Ship CardTrader</small></a>
+                    <a class="white-text" href="#"><small>Zero orders</small></a>
+                    <a class="white-text" href="#"><small>Video Tutorials</small></a>
+                </div>
+            </div>
+            <div class="footer-content grid pl-m">
+                <div class="footer-content">
+                    <b class="text-tertiary"><small>GAMES</small></b>
+                    <a class="white-text" href="#"><small> the Gathering</small></a>
+                    <a class="white-text" href="#"><small>Pokemon</small></a>
+                    <a class="white-text" href="#"><small>Yu-GI-Oh!</small></a>
+                    <a class="white-text" href="#"><small>Flesh and Blood</small></a>
+                    <a class="white-text" href="#"><small>Digimon</small></a>
+                    <a class="white-text" href="#"><small>Funko</small></a>
+                    <a class="white-text" href="#"><small>Force of Will</small></a>
+                    <a class="white-text" href="#"><small>Dragon Ball Super</small></a>
+                    <a class="white-text" href="#"><small>Cardfight!! Vanguard</small></a>
+                    <a class="white-text" href="#"><small>MetaZoo</small></a>
+                    <a class="white-text" href="#"><small>Gate Ruler</small></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Buttons HTML -->
+        <div style="display: flex; justify-content: center; gap: 1rem;">
+            <div class="smContainer">
+                <a href="#" class="footerButton">
+                    <object type="image/svg+xml" data="assets/images/facebook.svg"></object>
+                </a>
+                <div class="footerButtonShadow"></div>
+            </div>
+            <div class="smContainer">
+                <a href="#" class="footerButton">
+                    <object type="image/svg+xml" data="assets/images/twitter.svg"></object>
+                </a>
+                <div class="footerButtonShadow"></div>
+            </div>
+            <div class="smContainer">
+                <a href="#" class="footerButton">
+                    <object type="image/svg+xml" data="assets/images/instagram.svg"></object>
+                </a>
+                <div class="footerButtonShadow"></div>
+            </div>
+            <div class="smContainer">
+                <a href="#" class="footerButton">
+                    <object type="image/svg+xml" data="assets/images/reddit.svg"></object>
+                </a>
+                <div class="footerButtonShadow"></div>
+            </div>
+            <div class="smContainer">
+                <a href="#" class="footerButton">
+                    <object type="image/svg+xml" data="assets/images/youtube.svg"></object>
+                </a>
+                <div class="footerButtonShadow"></div>
+            </div>
+        </div>
+    </footer>
+    <div class="subfooter italic"><small>Copyright Card Solutions LLC 2018-2023</small></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>
