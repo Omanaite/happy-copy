@@ -100,6 +100,8 @@ function createCard(cardImage, titleImage) {
 function renderCarousel(currIndex) {
     removeChildren(cardContainer);
     const displayCards = cards.slice(currIndex, modulus(currIndex + 3, cards.length + 1));
+    // ISSUE: currIndex == 12 | 11 when sliding left, .slice returns empty
+    // console.log(currIndex, modulus(currIndex + 3, cards.length + 1));
     for (const card of displayCards) {
         cardContainer.appendChild(createCard(card.cardImage, card.titleImage));
     }
