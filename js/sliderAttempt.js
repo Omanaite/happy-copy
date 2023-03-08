@@ -4,21 +4,19 @@ const rightButton = document.querySelector("#sliderRight");
 let currIndex = 0;
 let prevIndex = 0;
 
-const gameCards = document.body.querySelectorAll(".gameCard");
-
 function modulus(n, m) {
     return ((n % m) + m) % m;
 }
 
 function slideRight() {
     prevIndex = currIndex;
-    currIndex = modulus(currIndex + 1, gameCards.length);
+    currIndex = modulus(currIndex + 1, cards.length);
     renderCarousel(currIndex);
 };
 
 function slideLeft() {
     prevIndex = currIndex;
-    currIndex = modulus(currIndex - 1, gameCards.length)
+    currIndex = modulus(currIndex - 1, cards.length)
     renderCarousel(currIndex);
 };
 
@@ -35,7 +33,46 @@ const cards = [
         cardImage: "assets/images/pokemon.svg",
         titleImage: "assets/images/pokemon.webp",
     },
-
+    {
+        cardImage: "assets/images/fab.svg",
+        titleImage: "assets/images/fab.webp",
+    },
+    {
+        cardImage: "assets/images/funko.svg",
+        titleImage: "assets/images/funko.webp",
+    },
+    {
+        cardImage: "assets/images/forceofwill.svg",
+        titleImage: "assets/images/forceofwill.webp",
+    },
+    {
+        cardImage: "assets/images/vanguard.svg",
+        titleImage: "assets/images/vanguard.webp",
+    },
+    {
+        cardImage: "assets/images/gateruler.svg",
+        titleImage: "assets/images/gateruler.webp",
+    },
+    {
+        cardImage: "assets/images/mha.svg",
+        titleImage: "assets/images/mha.webp",
+    },
+    {
+        cardImage: "assets/images/metazoo.svg",
+        titleImage: "assets/images/metazoo.webp",
+    },
+    {
+        cardImage: "assets/images/dbz.svg",
+        titleImage: "assets/images/dbz.webp",
+    },
+    {
+        cardImage: "assets/images/ff.svg",
+        titleImage: "assets/images/ff.webp",
+    },
+    {
+        cardImage: "assets/images/digimon.svg",
+        titleImage: "assets/images/digimon.webp",
+    },
 ]
 
 const cardContainer = document.querySelector(".footer-slider-cardContainer");
@@ -46,7 +83,7 @@ function removeChildren(parent) {
     }
 }
 
-function createCard(titleImage, cardImage) {
+function createCard(cardImage, titleImage) {
     const cardEl = document.createElement("div")
     const cardImageEl = document.createElement("img")
     cardImageEl.src = cardImage;
@@ -63,9 +100,8 @@ function createCard(titleImage, cardImage) {
 function renderCarousel(currIndex) {
     removeChildren(cardContainer);
     const displayCards = cards.slice(currIndex, modulus(currIndex + 3, cards.length + 1));
-    // console.log(currIndex, modulus(currIndex + 3, cards.length));
     for (const card of displayCards) {
-        cardContainer.appendChild(createCard(card.titleImage, card.cardImage));
+        cardContainer.appendChild(createCard(card.cardImage, card.titleImage));
     }
 }
 
@@ -73,6 +109,3 @@ leftButton.addEventListener("click", slideLeft);
 rightButton.addEventListener("click", slideRight);
 
 renderCarousel(currIndex);
-
-
-// cardContainer.innerHTML = "asfadssa";
