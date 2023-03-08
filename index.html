@@ -19,13 +19,15 @@
         <nav>
           <div class="flex items-center bg-blue-900 gap-5 p-5">
             <img class="h-10" src="assets/images/logo_dark.svg" />
-            <input class="bg-white rounded-full h-10 grow border-none" />
+            <input class="bg-white rounded-full h-10 grow border-none indent-4" />
             <a class="flex flex-col items-center" href="#">
               <img
                 class="h-6"
                 src="assets/images/arrow-right-to-bracket-solid.svg"
               />
-              <p class="text-white text-sm">Log In</p>
+              <p class="text-white text-sm break-keep whitespace-nowrap">
+                Log In
+              </p>
             </a>
             <a class="flex flex-col items-center" href="#">
               <img class="h-6" src="assets/images/cart3.svg" />
@@ -113,61 +115,49 @@
           FREE SHIPPING on all CardTrader Zero orders over $25 (only singles).
           The next best thing in your life!
         </div>
-        <div class="header-footer">
-          <div>
-            <div class="header-footer__wrapper">
-              <div class="">
-                <img class="h-3" src="assets/images/star-solid.svg" />
-                <img class="h-3" src="assets/images/star-solid.svg" />
-                <img class="h-3" src="assets/images/star-solid.svg" />
-                <img class="h-3" src="assets/images/star-solid.svg" />
-                <img class="h-3" src="assets/images/star-solid.svg" />
-              </div>
-              <div class="">Trusted by 21.800+ consumers every day</div>
+        <div class="header-footer px-32 py-14 flex text-white bg-blue-900">
+          <div id="leftSection" class="w-1/2 flex flex-col">
+            <div class="flex items-center gap-1">
+              <img class="h-4" src="assets/images/star-solid.svg" />
+              <img class="h-4" src="assets/images/star-solid.svg" />
+              <img class="h-4" src="assets/images/star-solid.svg" />
+              <img class="h-4" src="assets/images/star-solid.svg" />
+              <img class="h-4" src="assets/images/star-solid.svg" />
+              <div class="text-sm ml-5">Trusted by 21.800+ consumers every day</div>
             </div>
-            <div class="choose-game">Choose your game</div>
+            <h1 class="text-5xl font-bold mt-10">
+              Your reference site for buying and selling card games
+            </h1>
+            <a href="#"><button class="bg-blue-400 text-white rounded-md flex p-3 mt-10 font-bold">Join now</button></a>
+            <div class="flex justify-around mt-10">
+              <div class="flex flex-col items-center">
+                <img
+                  class="h-10"
+                  src="assets/images/envelope-solid.svg"
+                />
+                <p class="font-bold text-xl">
+                  Register in less<br />
+                  than one minute
+                </p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img
+                  class="h-10"
+                  src="assets/images/shield-dog-solid.svg"
+                />
+                <p class="font-bold text-xl">You are always covered</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img
+                  class="h-10"
+                  src="assets/images/truck-solid.svg"
+                />
+                <p class="font-bold text-xl">The lowest <br />shipping costs</p>
+              </div>
+            </div>
           </div>
-          <div class="">
-            <div class="reference-container">
-              <div class="">
-                <h1>Your reference site for buying and selling card games</h1>
-                <a href="#"><button>Join now</button></a>
-              </div>
-              <div class="envoltorio">
-                <div class="uno">
-                  <div>
-                    <img
-                      class="reference-icons"
-                      src="assets/images/envelope-solid.svg"
-                    />
-                  </div>
-                  <div>
-                    <p>
-                      Register in less<br />
-                      than one minute
-                    </p>
-                  </div>
-                </div>
-                <div class="dos">
-                  <div>
-                    <img
-                      class="reference-icons"
-                      src="assets/images/shield-dog-solid.svg"
-                    />
-                  </div>
-                  <div>You are always covered</div>
-                </div>
-                <div class="tres">
-                  <div>
-                    <img
-                      class="reference-icons"
-                      src="assets/images/truck-solid.svg"
-                    />
-                  </div>
-                  <div>The lowest <br />shipping costs</div>
-                </div>
-              </div>
-            </div>
+          <div id="rightSection" class="w-1/2">
+            <div class="choose-game font-bold text-xl">Choose your game</div>
             <div
               id="slider"
               style="
@@ -182,7 +172,7 @@
                 class="sliderButton sliderButton__left"
               ></button>
               <div class="sliderFader sliderFader__left"></div>
-              <div class="footer-slider-cardContainer">
+              <div class="footer-slider-cardContainer flex">
                 <div class="gameCard" id="card1">1</div>
                 <div class="gameCard" id="card2">2</div>
                 <div class="gameCard" id="card3">3</div>
@@ -239,19 +229,19 @@
           </div>
         </div>
       </header>
-      <div id="reduceShippingCosts">
-        <div class="rSc">
-          <h2 class="noTopMargin">
+      <div id="reduceShippingCosts" class="px-32 py-14 flex">
+        <div class="">
+          <h2 class="text-xl font-bold">
             Reduce shipping costs with CardTrader Zero
           </h2>
-          <p class="bigTopMargin fw700">
+          <p class="mt-10 font-bold">
             CardTrader Zero is our patented method that drastically lowers
             shipping costs for our users.
           </p>
-          <p class="bigTopMargin fw700">
+          <p class="mt-10 font-bold">
             Buy from multiple sellers all over the world with a single shipment.
           </p>
-          <button class="bigTopMargin" style="align-self: flex-start">
+          <button class="mt-10 bg-blue-400 text-white rounded-md flex p-3 mt-10 font-bold">
             Discover how it works
           </button>
         </div>

@@ -19,4 +19,29 @@
         white-space: nowrap;
         word-break: keep-all;
     }
+    .footer-slider-cardContainer{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transition-duration: 0.5s;
+        transition-property: justify-content, align-items;
+        transition-timing-function: linear;
+    }
+    .gameCard {
+        min-width: 10rem;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+        border-radius: 10px;
+        background-color: #e0e0e0;
+        color: black;
+        margin: 0 0.5rem;
+        transition-duration: 0.5s;
+        transition-property: min-width, margin;
+        transition-timing-function: linear;
+      }
 }
