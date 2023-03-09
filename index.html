@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <title>happy-copy</title>
-    <script defer src="js/sliderAttempt.js"></script>
+    <script defer src="src/sliderAttempt.ts"></script>
   </head>
   <body>
     <script type="module" src="/main.js"></script>
@@ -159,11 +159,11 @@
             </div>
           </div>
           <div id="rightSection" class="lg:w-1/2">
-            <div class="choose-game font-bold text-xl text-center lg:text-left ml-3rem">Choose your game</div>
+            <div class="choose-game font-bold text-xl text-center lg:text-left mt-4 lg:mt-0">Choose your game</div>
             <div id="slider" class="flex items-center h-70 relative mt-4">
               <button
                 id="sliderLeft"
-                class="w-10 h-10 shrink-0 rounded-full bg-blue-500 absolute left-0 z-20"
+                class="w-10 h-10 shrink-0 rounded-full bg-blue-500 absolute left-0 z-20 font-bold"
               >←</button>
               <div class="w-20 h-full shrink0 bg-gradient-to-r from-sky-900 absolute left-0 z-10"></div>
               <div class="footer-slider-cardContainer flex">
@@ -217,7 +217,7 @@
               <div class="w-20 h-full shrink0 bg-gradient-to-l from-sky-900 absolute right-0 z-10"></div>
               <button
                 id="sliderRight"
-                class="w-10 h-10 shrink-0 rounded-full bg-blue-500 absolute right-0 z-10 hover:shadow-white"
+                class="w-10 h-10 shrink-0 rounded-full bg-blue-500 absolute right-0 z-10 font-bold"
               >→</button>
             </div>
           </div>
