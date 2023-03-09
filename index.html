@@ -17,10 +17,10 @@
     <main>
       <header>
         <nav>
-          <div class="flex items-center bg-sky-900 gap-5 p-5">
+          <div class="flex items-center justify-between flex-wrap bg-sky-900 gap-5 p-5">
             <img class="block md:hidden h-6" src="assets/images/bars-solid.svg" />
             <img class="h-10" src="assets/images/logo_dark.svg" />
-            <input class="bg-white rounded-full h-10 grow border-none indent-4 order-10 md:order-none" />
+            <input class="bg-white rounded-full h-10 grow border-none indent-4 order-10 md:order-none w-96 md:w-1" />
             <a class="hidden md:flex flex-col items-center" href="#">
               <img
                 class="h-6"
@@ -116,9 +116,9 @@
           FREE SHIPPING on all CardTrader Zero orders over $25 (only singles).
           The next best thing in your life!
         </div>
-        <div class="flex flex-col md:flex-row px-[clamp(1rem,10vw,10rem)] py-14 text-white bg-sky-900">
-          <div id="leftSection" class="md:w-1/2 flex flex-col items-center">
-            <div class="flex flex-col md:flex-row">
+        <div class="flex flex-col lg:flex-row px-[clamp(1rem,10vw,10rem)] py-[clamp(1rem,5vw,5rem)] text-white bg-sky-900">
+          <div id="leftSection" class="lg:w-1/2 flex flex-col items-center lg:items-start">
+            <div class="flex flex-col items-center lg:flex-row">
               <div class="flex items-center gap-1">
                 <img class="h-4" src="assets/images/star-solid.svg" />
                 <img class="h-4" src="assets/images/star-solid.svg" />
@@ -126,55 +126,46 @@
                 <img class="h-4" src="assets/images/star-solid.svg" />
                 <img class="h-4" src="assets/images/star-solid.svg" />
               </div>
-              <div class="text-sm md:ml-5">Trusted by 21.800+ consumers every day</div>
+              <div class="text-sm lg:ml-5">Trusted by 21.800+ consumers every day</div>
             </div>
-            <h1 class="text-2xl md:text-5xl font-bold mt-10">
+            <h1 class="text-2xl lg:text-5xl font-bold mt-10">
               Your reference site for buying and selling card games
             </h1>
             <a href="#"><button class="bg-blue-500 text-white rounded-md flex px-3 py-1 mt-10 font-bold">Join now</button></a>
-            <div class="flex justify-around mt-10">
-              <div class="flex flex-col items-center">
+            <div class="flex justify-around mt-10 gap-4">
+              <div class="flex flex-col items-center w-1/3">
                 <img
                   class="h-10"
                   src="assets/images/envelope-solid.svg"
                 />
-                <p class="font-bold text-xl">
-                  Register in less<br />
-                  than one minute
+                <p class="font-bold lg:text-xl text-center">
+                  Register in less than one minute
                 </p>
               </div>
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center w-1/3">
                 <img
                   class="h-10"
                   src="assets/images/shield-dog-solid.svg"
                 />
-                <p class="font-bold text-xl">You are always covered</p>
+                <p class="font-bold lg:text-xl text-center">You are always covered</p>
               </div>
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center w-1/3">
                 <img
                   class="h-10"
                   src="assets/images/truck-solid.svg"
                 />
-                <p class="font-bold text-xl">The lowest <br />shipping costs</p>
+                <p class="font-bold lg:text-xl text-center">The lowest <br />shipping costs</p>
               </div>
             </div>
           </div>
-          <div id="rightSection" class="w-1/2">
-            <div class="choose-game font-bold text-xl">Choose your game</div>
-            <div
-              id="slider"
-              style="
-                display: flex;
-                align-items: center;
-                width: 35rem;
-                height: 20rem;
-              "
-            >
+          <div id="rightSection" class="lg:w-1/2">
+            <div class="choose-game font-bold text-xl text-center lg:text-left ml-3rem">Choose your game</div>
+            <div id="slider" class="flex items-center h-70 relative mt-4">
               <button
                 id="sliderLeft"
-                class="w-10 h-10 shrink-0 rounded-full bg-blue-500 translate-x-10 z-20"
-              ></button>
-              <div class="w-20 h-full shrink0 bg-gradient-to-r from-sky-900 translate-x-full z-10"></div>
+                class="w-10 h-10 shrink-0 rounded-full bg-blue-500 absolute left-0 z-20"
+              >←</button>
+              <div class="w-20 h-full shrink0 bg-gradient-to-r from-sky-900 absolute left-0 z-10"></div>
               <div class="footer-slider-cardContainer flex">
                 <div class="gameCard" id="card1">1</div>
                 <div class="gameCard" id="card2">2</div>
@@ -223,11 +214,11 @@
                 <div class="gameCard" id="card12">12</div>
                 <div class="gameCard" id="card13">13</div>
               </div>
-              <div class="w-20 h-full shrink0 bg-gradient-to-l from-sky-900 -translate-x-full z-10"></div>
+              <div class="w-20 h-full shrink0 bg-gradient-to-l from-sky-900 absolute right-0 z-10"></div>
               <button
                 id="sliderRight"
-                class="w-10 h-10 shrink-0 rounded-full bg-blue-500 -translate-x-10 z-10 sliderButton sliderButton__right"
-              ></button>
+                class="w-10 h-10 shrink-0 rounded-full bg-blue-500 absolute right-0 z-10 hover:shadow-white"
+              >→</button>
             </div>
           </div>
         </div>

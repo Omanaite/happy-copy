@@ -21,10 +21,8 @@
     }
     .footer-slider-cardContainer{
         overflow: hidden;
-        display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
         transition-duration: 0.5s;
         transition-property: justify-content, align-items;
         transition-timing-function: linear;
