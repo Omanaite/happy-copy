@@ -17,9 +17,10 @@
     <main>
       <header>
         <nav>
-          <div class="flex items-center bg-blue-900 gap-5 p-5">
+          <div class="flex items-center bg-sky-900 gap-5 p-5">
+            <img class="h-6" src="assets/images/" />
             <img class="h-10" src="assets/images/logo_dark.svg" />
-            <input class="bg-white rounded-full h-10 grow border-none indent-4" />
+            <input class="bg-white rounded-full h-10 grow border-none indent-4 hidden md:block" />
             <a class="flex flex-col items-center" href="#">
               <img
                 class="h-6"
@@ -35,7 +36,7 @@
             </a>
           </div>
         </nav>
-        <div class="flex justify-between items-center px-5 py-1">
+        <div class="hidden md:flex justify-between items-center px-5 py-1">
           <ul class="inline-flex gap-4 overflow-x-scroll">
             <li class="midEntry">
               <span class="noBreak text-sm">Magic: the Gathering</span>
@@ -105,30 +106,32 @@
             class="bg-gradient-to-l from-white w-5 scale-x-150 -translate-x-4 h-5"
           ></div>
           <a class="shrink-0 flex" href="#">
-            <button class="bg-blue-400 text-white rounded-md flex p-1 gap-1">
+            <button class="bg-blue-500 text-white rounded-md flex p-1 gap-1">
               <img class="h-5" src="assets/images/rocket-solid.svg" />
               <span class="noBreak text-sm">Cart Optimizer</span>
             </button>
           </a>
         </div>
-        <div class="bg-green-600 text-white text-center">
+        <div class="bg-green-600 text-white text-center hidden md:block">
           FREE SHIPPING on all CardTrader Zero orders over $25 (only singles).
           The next best thing in your life!
         </div>
-        <div class="header-footer px-32 py-14 flex text-white bg-blue-900">
-          <div id="leftSection" class="w-1/2 flex flex-col">
-            <div class="flex items-center gap-1">
-              <img class="h-4" src="assets/images/star-solid.svg" />
-              <img class="h-4" src="assets/images/star-solid.svg" />
-              <img class="h-4" src="assets/images/star-solid.svg" />
-              <img class="h-4" src="assets/images/star-solid.svg" />
-              <img class="h-4" src="assets/images/star-solid.svg" />
-              <div class="text-sm ml-5">Trusted by 21.800+ consumers every day</div>
+        <div class="flex flex-col md:flex-row px-[clamp(1rem,10vw,10rem)] py-14 text-white bg-sky-900">
+          <div id="leftSection" class="md:w-1/2 flex flex-col items-center">
+            <div class="flex flex-col md:flex-row">
+              <div class="flex items-center gap-1">
+                <img class="h-4" src="assets/images/star-solid.svg" />
+                <img class="h-4" src="assets/images/star-solid.svg" />
+                <img class="h-4" src="assets/images/star-solid.svg" />
+                <img class="h-4" src="assets/images/star-solid.svg" />
+                <img class="h-4" src="assets/images/star-solid.svg" />
+              </div>
+              <div class="text-sm md:ml-5">Trusted by 21.800+ consumers every day</div>
             </div>
-            <h1 class="text-5xl font-bold mt-10">
+            <h1 class="text-2xl md:text-5xl font-bold mt-10">
               Your reference site for buying and selling card games
             </h1>
-            <a href="#"><button class="bg-blue-400 text-white rounded-md flex p-3 mt-10 font-bold">Join now</button></a>
+            <a href="#"><button class="bg-blue-500 text-white rounded-md flex px-3 py-1 mt-10 font-bold">Join now</button></a>
             <div class="flex justify-around mt-10">
               <div class="flex flex-col items-center">
                 <img
@@ -169,9 +172,9 @@
             >
               <button
                 id="sliderLeft"
-                class="w-10 h-10 shrink-0 rounded-full bg-blue-300 translate-x-10 z-20"
+                class="w-10 h-10 shrink-0 rounded-full bg-blue-500 translate-x-10 z-20"
               ></button>
-              <div class="w-20 h-full shrink0 bg-gradient-to-r from-blue-900 translate-x-full z-10"></div>
+              <div class="w-20 h-full shrink0 bg-gradient-to-r from-sky-900 translate-x-full z-10"></div>
               <div class="footer-slider-cardContainer flex">
                 <div class="gameCard" id="card1">1</div>
                 <div class="gameCard" id="card2">2</div>
@@ -220,16 +223,16 @@
                 <div class="gameCard" id="card12">12</div>
                 <div class="gameCard" id="card13">13</div>
               </div>
-              <div class="w-20 h-full shrink0 bg-gradient-to-l from-blue-900 -translate-x-full z-10"></div>
+              <div class="w-20 h-full shrink0 bg-gradient-to-l from-sky-900 -translate-x-full z-10"></div>
               <button
                 id="sliderRight"
-                class="w-10 h-10 shrink-0 rounded-full bg-blue-300 -translate-x-10 z-10 sliderButton sliderButton__right"
+                class="w-10 h-10 shrink-0 rounded-full bg-blue-500 -translate-x-10 z-10 sliderButton sliderButton__right"
               ></button>
             </div>
           </div>
         </div>
       </header>
-      <div id="reduceShippingCosts" class="px-32 py-14 flex">
+      <section id="reduceShippingCosts" class="px-[clamp(1rem,10vw,10rem)] py-14 flex">
         <div class="">
           <h2 class="text-4xl font-bold">
             Reduce shipping costs with CardTrader Zero
@@ -241,7 +244,7 @@
           <p class="mt-10 font-bold">
             Buy from multiple sellers all over the world with a single shipment.
           </p>
-          <button class="mt-10 bg-blue-400 text-white rounded-md flex p-3 font-bold">
+          <button class="mt-10 bg-blue-500 text-white rounded-md flex px-3 py-1 font-bold">
             Discover how it works
           </button>
         </div>
@@ -250,55 +253,57 @@
           width="50%"
           poster="assets/images/trading vid.png"
         ></video>
-      </div>
-      <div class="benefitsForBuyers">
-        <h3 class="noTopMargin">Benefits for buyers:</h3>
-        <div class="bfbLevel">
-          <div class="bfbCard">
+      </section>
+      <section id="benefitsForBuyers" class="flex flex-col items-center bg-slate-200 px-[clamp(1rem,10vw,10rem)] py-14">
+        <h3 class="text-4xl font-bold">Benefits for buyers:</h3>
+        <div class="flex justify-around mt-10">
+          <div class="flex flex-col items-center w-1/3 p-5">
             <img
               src="assets/images/earth-americas-solid.svg"
               alt=""
-              class="sectionIcon"
+              class="h-20"
             />
-            <p class="fw700">Buy from any seller</p>
-            <p class="bigTopMargin">
+            <p class="font-bold">Buy from any seller</p>
+            <p class="mt-10">
               Stop worrying about shipping costs, buy anything you want and save
               over 15% on your purchases.
             </p>
           </div>
-          <div class="bfbCard">
+          <div class="flex flex-col items-center w-1/3 p-5">
             <img
               src="assets/images/handshake-solid.svg"
               alt=""
-              class="sectionIcon"
+              class="h-20"
             />
-            <p class="fw700">No more disputes</p>
-            <p class="bigTopMargin">
+            <p class="font-bold">No more disputes</p>
+            <p class="mt-10">
               Our staff handles shipments and quality checks, you always receive
               what you want.
             </p>
           </div>
-          <div class="bfbCard">
+          <div class="flex flex-col items-center w-1/3 p-5">
             <img
               src="assets/images/headset-solid.svg"
               alt=""
-              class="sectionIcon"
+              class="h-20"
             />
-            <p class="fw700">24/7 Customer care</p>
-            <p class="bigTopMargin">
+            <p class="font-bold">24/7 Customer care</p>
+            <p class="mt-10">
               CardTrader handles any order with 24/7 customer support. Issues
               are handled promptly.
             </p>
           </div>
         </div>
-        <button>Join now</button>
-      </div>
-    </main>
-    <div class="center">
-      <h5>FAQ</h5>
-      <hr />
-      <div class="homepage-title-icon"></div>
-    </div>
+        <button class="mt-10 bg-blue-500 text-white rounded-md flex px-3 py-1 font-bold">Join now</button>
+      </section>
+
+    <section id="FAQ" class="px-[clamp(1rem,10vw,10rem)] py-14">
+      <div class="flex items-center">
+        <h5 class="text-4xl font-bold">FAQ</h5>
+        <hr class="w-full border-slate-900" />
+        <div class="h-10 w-10 shrink-0 bg-slate-600 rounded-full"></div>
+     </div>
+    
 
     <!-- create a section with class name of FAQ-container -->
     <section class="FAQ-container">
@@ -364,6 +369,9 @@
         </p>
       </div>
     </section>
+  </section>
+
+  </main>
 
     <footer class="footer">
       <div class="footer-content">
